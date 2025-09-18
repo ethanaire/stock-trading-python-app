@@ -1,2 +1,4 @@
-request 
+requests
 openai
+csv
+dotenv
