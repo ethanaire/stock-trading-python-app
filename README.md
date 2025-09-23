@@ -28,8 +28,24 @@ Install the required libraries using the provided `requirements.txt` file:
 python3 -m pip install -r requirements.txt
 ```
 
-Run the project:
+Run the script:
 
 ```bash
 python3 script.py
+```
+
+Activate and edit `crontab` utility: 
+
+```bash
+crontab -e
+```
+
+```bash
+* * * * * /usr/bin/python3 /path/stock-trading-python-app/script.py
+```
+
+Run the Python script every minute: 
+
+```bash
+crontab 
 ```
