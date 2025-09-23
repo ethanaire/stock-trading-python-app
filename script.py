@@ -26,6 +26,7 @@ def run_stock_job():
     while 'next_url' in data:
         print('requesting next page', data['next_url'])
         response = requests.get(data['next_url'] + f'&apiKey={POLYGON_API_KEY}')
+        time.sleep(12) # Make 1 request every 12 seconds 
         data = response.json()
         print(data)
         
