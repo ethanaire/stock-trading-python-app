@@ -3,5 +3,4 @@ openai
 csv
 dotenv
 schedule 
-datetime 
-time
+snowflake-connector-python
